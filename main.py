@@ -24,10 +24,11 @@ def menu():
             imagen_url = input("URL de la imagen (opcional): ") or None
             crear_publicacion(id_usuario, contenido, imagen_url)
         elif opcion == "3":
-            id_publicacion = int(input("ID de la publicación: "))
+            publicacionID = int(input("ID de la publicación: "))
             id_usuario = int(input("ID del usuario: "))
             comentario = input("Comentario: ")
-            comentar_publicacion(id_publicacion, id_usuario, comentario)
+            comentarioOpcional = input("Ingrese comentario opcional")
+            comentar_publicacion(id_publicacion, id_usuario, comentario, comentarioOpcional)
         elif opcion == "4":
             id_publicacion = int(input("ID de la publicación: "))
             id_usuario = int(input("ID del usuario: "))
